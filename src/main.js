@@ -1,6 +1,6 @@
 let socket = io("/");
 let lang = navigator.language || navigator.userLanguage;
-console.log("Lang: " + lang);
+console.log("Language: " + lang);
 $(document).ready(() => {
   console.log("Document ready!!!");
   //$("#divRemote").hide();
