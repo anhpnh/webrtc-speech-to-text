@@ -17,13 +17,16 @@
 </head>
 
 <body>
-    <div style="width: 600px;">
+    <div id="divLocal">
         <video id="localStream" controls muted></video>
-        <h4 id="txtLocalSpeech">Speech to text</h4>
+        <div id="txtLocalSpeech">Local Speech To Text</div>
     </div>
-    <br />
-    <video id="remoteStream" width="600px" controls></video>
-    <br /><br />
+    <div id="divRemote">
+        <video id="remoteStream" controls></video>
+        <div id="txtRemoteSpeech">Remote Speech To Text</div>
+    </div>
+
+
 </body>
 <script src='/js/bundle.js'></script>
 

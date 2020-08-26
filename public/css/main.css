@@ -1,20 +1,38 @@
-h4 {
-  width: 600px;
+#txtLocalSpeech {
+  width: 580px;
   position: absolute;
-  top: 400px;
+  top: 358px;
   padding: 3px 10px;
   text-align: center;
   color: rgb(255, 255, 255);
   background-color: transparent;
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   font-weight: bold;
   min-height: 3.6em;
 }
 
-h4,
+#txtRemoteSpeech {
+  width: 580px;
+  position: absolute;
+  top: 358px;
+  padding: 3px 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  font-size: 1.2em;
+  font-weight: bold;
+  min-height: 3.6em;
+}
+
+#txtLocalSpeech,
 #localStream {
   position: absolute;
+}
+
+#remoteStream,
+#txtRemoteSpeech {
+  position: absolute;
+  margin-top: 455px;
 }
 
 video {
@@ -23,5 +41,5 @@ video {
 }
 
 body {
-    background-color: rgb(78, 77, 74);
+  background-color: rgb(78, 77, 74);
 }

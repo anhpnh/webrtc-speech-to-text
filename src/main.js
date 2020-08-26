@@ -3,7 +3,7 @@ let lang = "ja-JP";
 
 $(document).ready(() => {
   console.log("Document ready!!!");
-  $("#remoteStream").hide();
+  //$("#divRemote").hide();
   let speechRec = new p5.SpeechRec(lang, gotSpeech);
   //console.log(speechRec);
 
