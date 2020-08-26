@@ -3,12 +3,21 @@ let app = express();
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.set("views", "./views");
-let port = 3000;
+let PORT = process.env.PORT || 3000;
 
-app.listen(process.env.PORT || port);
-console.log("Server started: " + port);
+let server = require("http").Server(app);
+let io = require("socket.io")(server);
+server.listen(PORT);
+console.log(`Server started ${PORT}`);
 
+io.on("connection", (socket) => {
+  console.log(`Client connected: ${socket.id}`);
+
+  socket.on("disconnect", () => {
+    console.log(`Client disconnected: ${socket.id}`);
+  });
+});
 
 app.get("/", (req, res) => {
-    res.render("trangchu");
+  res.render("trangchu");
 });

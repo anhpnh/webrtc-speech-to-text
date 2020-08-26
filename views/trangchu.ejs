@@ -4,14 +4,27 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Demo ReactJS</title>
+    <title>Demo WebRTC Speech To Text</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/main.css'>
-    <script src='/js/bundle.js'></script>
+    <script src="/js/jquery-3.5.1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/peerjs.min.js"></script>
+    <script src="/js/p5.js"></script>
+    <script src="/js/p5.sound.js"></script>
+    <script src="/js/p5.speech.js"></script>
+
 </head>
 
 <body>
-
+    <div style="width: 600px;">
+        <video id="localStream" controls muted></video>
+        <h4 id="txtLocalSpeech">Speech to text</h4>
+    </div>
+    <br />
+    <video id="remoteStream" width="600px" controls></video>
+    <br /><br />
 </body>
+<script src='/js/bundle.js'></script>
 
 </html>
