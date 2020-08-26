@@ -1,3 +1,26 @@
+li {
+  color: rgb(7, 224, 7);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.block {
+  clear: both;
+}
+#divOnline {
+  float: right;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#btnSignUp,
+#txtUserName {
+  float: left;
+  color: #000000;
+  margin-top: 0;
+  margin-right: 5px;
+}
+
 #txtLocalSpeech {
   width: 580px;
   position: absolute;
